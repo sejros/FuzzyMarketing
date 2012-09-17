@@ -1,0 +1,9 @@
+﻿<Application x:Class="FuzzyMarketing.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml" xmlns:my="clr-namespace:System;assembly=mscorlib">
+    <Application.Resources>
+    <my:Double x:Key="MainWindowWidth">525</my:Double>
+    <my:Double x:Key="MainWiondowHeght">350</my:Double>
+  </Application.Resources>
+</Application>
