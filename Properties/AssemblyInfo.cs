@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("FuzzyMarketing")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("BlackShine TEAM")]
+[assembly: AssemblyCompany("sejros")]
 [assembly: AssemblyProduct("FuzzyMarketing")]
-[assembly: AssemblyCopyright("Copyright © BlackShine TEAM 2012")]
+[assembly: AssemblyCopyright("Copyright © sejros 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

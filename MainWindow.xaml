@@ -4,7 +4,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	Title="FuzzyMarketing" 
 	Initialized="Window_Initialized" 
-	Height="350" 
+	Height="500" 
 	Width="900">
 	<Grid>
         <Grid.RowDefinitions>
@@ -15,9 +15,10 @@
         <Menu HorizontalAlignment="Left"
 			VerticalAlignment="Top"
 			Height="20"
-			Name="MainMenu" Background="{StaticResource {x:Static SystemColors.WindowBrushKey}}">
+			Name="MainMenu">
             <MenuItem Header="File">
                 <MenuItem Header="Сохранить" Name="Save" Click="Save_Click" />
+                <MenuItem Header="Открыть" Click="Image_btn_Click" />
                 <MenuItem Header="Выход" Name="Exit" Click="Exit_Click" />
             </MenuItem>
             <MenuItem Name="About" AllowDrop="True" Header="About">
@@ -180,15 +181,11 @@
                         Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Left" Name="add_s_u" VerticalAlignment="Bottom" Width="75" Click="add_s_u_Click" />
                             </Grid>
                         </TabItem>
-                        <TabItem Header="Организационная структура" IsEnabled="True">
-                <Button Content="Выбрать" Height="23" Name="Image_btn" Width="75" Click="Image_btn_Click" />
-            </TabItem>
-            <TabItem Header="Результаты" IsEnabled="True">
-
+            <TabItem Header="Результаты" IsEnabled="True" Name="ResultsTab">
                 <RichTextBox
 			Grid.Column="0"
-			Grid.Row="0" Name="RTB">
-                    <FlowDocument>
+			Grid.Row="0" Name="RTB" AcceptsTab="True" VerticalScrollBarVisibility="Auto">
+                    <FlowDocument Name="FlowDoc" Background="White">
                         <Paragraph FontSize="16" FontWeight="Bold">
                             Результаты
                         </Paragraph>
