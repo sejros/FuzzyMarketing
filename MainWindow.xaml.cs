@@ -215,16 +215,23 @@ namespace FuzzyMarketing
             p.FontSize = 16;
             FlowDoc.Blocks.Add(p);
             p = new Paragraph(new Run(
-                "Интегральная оценка сильных сторон (S): " + res_s.ToString() + ". \n" +
-                "Интегральная оценка слабых сторон (W): " + res_w.ToString() + ". \n" +
-                "Интегральная оценка возможностей (O): " + res_o.ToString() + ". \n" +
-                "Интегральная оценка угроз (T): " + res_t.ToString() + ". \n\n" +
-                "(SO): " + (res_s * res_o).ToString() + ". \n" +
-                "(ST): " + (res_s * res_t).ToString() + ". \n" +
-                "(WO): " + (res_w * res_o).ToString() + ". \n" +
-                "(WT): " + (res_w * res_t).ToString() + ". \n"
+                "Интегральная оценка сильных сторон (S): " + res_s.ToString() + ". \n\r" +
+                "Интегральная оценка слабых сторон (W): " + res_w.ToString() + ". \n\r" +
+                "Интегральная оценка возможностей (O): " + res_o.ToString() + ". \n\r" +
+                "Интегральная оценка угроз (T): " + res_t.ToString() + ". \n\r\n\r" +
+                "(SO): " + (res_s * res_o).ToString() + ". \n\r" +
+                "(ST): " + (res_s * res_t).ToString() + ". \n\r" +
+                "(WO): " + (res_w * res_o).ToString() + ". \n\r" +
+                "(WT): " + (res_w * res_t).ToString() + ". \n\r"
             ));
             p.FontSize = 12;
+            FlowDoc.Blocks.Add(p);
+
+            p = new Paragraph(new Run("Выводы"));
+            p.FontSize = 16;
+            FlowDoc.Blocks.Add(p);
+            p = new Paragraph(new Run(""));
+            p.FontSize = 16;
             FlowDoc.Blocks.Add(p);
 
             ResultsTab.IsSelected = true;
